@@ -15,4 +15,6 @@
         \nHow to connect to the internet and cache data locally using a Room database.
         \nHow to set view properties, and how to extract resources into and use resources from XML resource files.
     </string>
+    <string name="what_is_your_nick_name">What_ s your nick name?</string>
+    <string name="done">Done</string>
 </resources>
