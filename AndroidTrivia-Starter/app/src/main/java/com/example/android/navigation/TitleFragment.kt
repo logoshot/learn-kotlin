@@ -39,14 +39,17 @@ class TitleFragment : Fragment() {
                 R.layout.fragment_title,container,false)
 
         binding.playButton.setOnClickListener{view : View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)}
+            view.findNavController()
+                    .navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())}
 
         binding.rulesButton.setOnClickListener{view: View->
-            view.findNavController().navigate(R.id.action_titleFragment_to_rulesFragment)
+            view.findNavController()
+                    .navigate(TitleFragmentDirections.actionTitleFragmentToRulesFragment())
         }
 
         binding.aboutButton.setOnClickListener { view: View->
-            view.findNavController().navigate(R.id.action_titleFragment_to_aboutFragment)
+            view.findNavController()
+                    .navigate(TitleFragmentDirections.actionTitleFragmentToAboutFragment())
         }
         setHasOptionsMenu(true)
 
